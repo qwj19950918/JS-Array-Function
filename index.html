@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var arr1 = [1,2,3,4,5,6,7];
+    var arr2 = [11,22,33,44,55,66,77];
+    var arr3 = [12,21,53,44,89,47];
+    var arr4 = [87,54,54,58,63,87,12,45,55];
+    var arrConcat = arr1.concat(arr2); //concat 数组链接起来
+    console.log(arrConcat,'concat');
+    var arrJoin = arr1.join("*"); //join把数组中的所有元素放入一个字符串
+    console.log(arrJoin,'join');
+    var arrPop = arr1.pop(); // 删除数组的最后一个元素,并返回这个元素，会改变啊元素的长度
+    console.log(arrPop,'pop');
+    var arrPush = arr1.push('嘻嘻','哈哈'); //向数组的末尾添加元素，并返回新的长度
+    console.log(arrPush,'push');
+    var arrReverse = arr1.reverse(); //倒序数组的元素
+    console.log(arrReverse,'reverse');
+    var arrShift = arr1.shift(); //删除数组的第一个元素，并返回这个元素的值
+    console.log(arrShift,'shift');
+    var arrSlice  = arr1.slice(1,2); // 方法可从已有的数组返回选定的元素 slice(start,end)
+    console.log(arrSlice,'slice');
+    var arrSort = arr3.sort(); //顺序数组的元素
+    console.log(arrSort,'sort');
+    function srotNumber(a,b){ //排序函数，按数值大小排序，前端排序必备
+        return a-b;
+    }
+    console.log(arr4.sort(srotNumber),'排序函数');
+    var arrSplice = arr1.splice(2,1,'splice'); //数组中添加/删除项目，返回被删除的项目 splice(index,howmany,item) index添加删除的位置,howmany删除的元素的数量,item 添加的元素
+    console.log(arrSplice,'splice');
+    // var arrTosoutce = arr1.toSource(); //表示对象的源代码，只支持Gecko浏览器（火狐）
+    // console.log(arrTosoutce);
+    var arrTostring = arr1.toString(); // 数组转化成字符串，并返回结果
+    console.log(arrTostring,'toString');
+    var arrToLocaleString = arr1.toLocaleString(); //数组转化成本地字符串,并返回结果
+    console.log(arrToLocaleString,'toLocaleString');
+    var arrUnshift = arr1.unshift('unshift','shiftun');// 向数组开头添加一个或多个元素，并返回新的长度
+    console.log(arrUnshift,'unshift');
+    var arrValueOf = arr1.valueOf(); // 返回原始对象，JS默认的方法
+    console.log(arrValueOf,'valueOf')
+</script>
