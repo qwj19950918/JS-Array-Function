@@ -36,6 +36,23 @@
   };
   console.log(arr4.sort(sortNumber)); //[12, 45, 54, 54, 55, 58, 63, 87, 87]
   
-  var arrSplice arr1.splice(2,1,'splice'); //数组中添加/删除项目，返回被删除的项目; splice(index,howmany,item);index添加删除的位置，howmany山的元素的数量,item添加的元素
-  console.log(arrSplice)
+  var arrSplice = arr1.splice(0,1,'splice'); //数组中添加/删除项目，返回被删除的项目; splice(index,howmany,item);index添加删除的位置，howmanysh删除的元素的数量,item添加的元素
+  console.log(arrSplice); //["嘻嘻"]
+  
+  var arrTosoutce = arr1.toSourece(); //表示对象的源代码，只支持Gecko浏览器(火狐)
+  console.log(arrTosoutce); //谷歌报错喽
+  
+  var arrTostring = arr1.toString(); //数组转化成字符串，并返回结果
+  console.log(arrTostring); // splice,6,5,4,3,2,1
+  
+  var arrToLocalString = arr1.toLocaleString; //数组转化成本地字符串，并返回结果
+  console.log(arrToLocalString); // splice,6,5,4,3,2,1
+  
+  var arrUnshift = arr1.unshift('unshift','shiftun'); //向数组开头添加一个或多个元素，并返回新的长度
+  console.log(arrUnshift) // 9
+  
+  var arrValueOf = arr1.valueOf(); //返回原始对象，JS默认的方法;
+  console.log(arrValueOf) // ["unshift", "shiftun", "splice", 6, 5, 4, 3, 2, 1]
+  
 ```
+# 上午弄得一半，半路叫去做VUE的懒加载去了，下午接着填，有点遗忘了一些，待我去买瓶生命一号。
